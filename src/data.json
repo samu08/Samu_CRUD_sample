@@ -1,0 +1,60 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe@abc.com",
+      "gender": "Male",
+      "status": "Terminated"
+    },
+    {
+      "id": 2,
+      "first_name": "david",
+      "last_name": "Rose",
+      "email": "alexis@abc.com",
+      "gender": "Female",
+      "status": "New"
+    },
+    {
+      "id": 3,
+      "first_name": "Rachel",
+      "last_name": "Green",
+      "email": "rachel@abc.com",
+      "gender": "Female",
+      "status": "Leaving"
+    },
+    {
+      "id": 4,
+      "first_name": "chandler",
+      "last_name": "bing",
+      "email": "chandler@abc.com",
+      "gender": "Male",
+      "status": "Active"
+    },
+    {
+      "id": 5,
+      "first_name": "moira",
+      "last_name": "rose",
+      "email": "moira@test.com",
+      "gender": "female",
+      "status": "new"
+    },
+    {
+      "id": 6,
+      "first_name": "beth",
+      "last_name": "harmon",
+      "email": "beth_harmon@test.com",
+      "gender": "female",
+      "status": "active"
+    },
+    {
+      "first_name": "sam",
+      "last_name": "pimpale",
+      "email": "samu@test.com",
+      "gender": "female",
+      "status": "active",
+      "id": 7
+    }
+  ]
+}

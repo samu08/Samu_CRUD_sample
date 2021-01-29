@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Createemployee from './components/Createemployee'
+import EmployeList from './components/EmployeList'
+import Editemployee from './components/Editemployee'
+import Page1 from './components/Page1'
+import CreatePost from './components/CreatePost'
+import EditPost from './components/EditPost'
+import DeletePost from './components/DeletePost'
+import PostDetails from './components/PostDetails'
+
+import Emp1 from './components/Emp1'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Assignment</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/create">create post</a></li>
+      <li><a href="#">SignIn</a></li>
+    </ul>
+  </div>
+</nav>
+<div className="container">
+                <br />
+                <Route path="/" exact component={Emp1}></Route>
+                <Route path="/create" exact component={CreatePost}></Route>
+                <Route path="/details/:id" exact component={PostDetails}></Route>
+                <Route path="/delete/:id" exact component={DeletePost}></Route>
+                <Route path="/edit/:id" exact component={EditPost}></Route>
+              
+            </div>
+</Router>
   );
 }
 
