@@ -19,6 +19,17 @@ const Emp1=()  =>{
       })
   }, []);
    
+
+  const removeData = (id) => {
+    let url = `http://localhost:4000/employees/${id}`
+
+    axios.delete(url).then(res => {
+        const del = Data.filter(employee => id !== employee.id)
+        setData(del)
+        console.log('res', res)
+    })
+}
+
   const deleteUser = id =>{ setData(Data.filter(user => user.id !== id));
     console.log(Data)
     history.push('/')
@@ -49,7 +60,7 @@ const Emp1=()  =>{
            <td>{item.gender}</td>
            
            <Link to={`/edit/${item.id}`} className="btn btn-primary">edit</Link>
-           <button  type="button" class="btn btn-danger" onClick={()=> deleteUser(item.id)}>delete</button>
+           <button  type="button" class="btn btn-danger" onClick={()=> removeData(item.id)}>delete</button>
            </tr>
        }
     

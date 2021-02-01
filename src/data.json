@@ -55,6 +55,22 @@
       "gender": "female",
       "status": "active",
       "id": 7
+    },
+    {
+      "first_name": "samruddhi",
+      "last_name": "pimpale",
+      "email": "samruddhi@test.com",
+      "gender": "female",
+      "status": "active",
+      "id": 8
+    },
+    {
+      "first_name": "minal",
+      "last_name": "pimpale",
+      "email": "minal@test.com",
+      "gender": "female",
+      "status": "new",
+      "id": 9
     }
   ]
 }
